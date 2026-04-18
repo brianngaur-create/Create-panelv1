@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Panel </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Buat Panel Yann</h2>
+            <p>By YANN TAMVAN</p>
+        </div>
+
+        <form id="panelForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <div class="input-with-button">
+                    <input type="text" id="username" placeholder="username" required>
+                    <button type="button" id="btnRandomUser" class="icon-btn" title="Generate Username Acak">
+                        <i class="fa-solid fa-dice"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jenisPanel">Pilih Jenis Panel:</label>
+                <select id="jenisPanel" required>
+                    <option value="user">User Panel</option>
+                    <option value="admin">Admin Panel</option>
+                </select>
+            </div>
+
+<div class="form-group">
+    <label for="ram">Pilih RAM:</label>
+    <select id="ram" required>
+        <option value="1024">1 GB</option>
+        <option value="2048">2 GB</option>
+        <option value="3072">3 GB</option>
+        <option value="4096">4 GB</option>
+        <option value="5120">5 GB</option>
+        <option value="6144">6 GB</option>
+        <option value="7168">7 GB</option>
+        <option value="8192">8 GB</option>
+        <option value="9216">9 GB</option>
+        <option value="0">Unlimited</option>
+    </select>
+</div>
+
+            <button type="submit" id="btnSubmit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div id="resultModal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modalTitle">Status Pembuatan</h3>
+            <p id="modalMessage">Pesan status disini...</p>
+            
+            <div id="credentialsArea" class="hidden">
+                <div class="credential-box">
+                    <span>Username: <strong id="resUser"></strong></span>
+                    <button type="button" onclick="copyText('resUser')" class="copy-btn"><i class="fa-solid fa-copy"></i> Salin</button>
+                </div>
+                <div class="credential-box">
+                    <span>Password: <strong id="resPass"></strong></span>
+                    <button type="button" onclick="copyText('resPass')" class="copy-btn"><i class="fa-solid fa-copy"></i> Salin</button>
+                </div>
+                <p class="login-link">Login di: <a href="https://sanzy.webserverku.biz.id" target="_blank">sanzy.webserverku.biz.id</a></p>
+            </div>
+            
+            <button class="close-btn" id="btnCloseModal">Tutup</button>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
