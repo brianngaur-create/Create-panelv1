@@ -1,24 +1,9 @@
 {
-  "env": [
-    {
-      "key": "PTERODACTYL_DOMAIN",
-      "value": "https://sanzy.webserverku.biz.id"
-    },
-    {
-      "key": "PTERODACTYL_PLTA",
-      "value": "ptla_wSJufvKqSepXSGQzXrgsf2NWWmuDeBjNy7DdcDYaQDm"
-    },
-    {
-      "key": "EGG_ID",
-      "value": "1"
-    },
-    {
-      "key": "ALLOCATION_ID",
-      "value": "1"
-    },
-    {
-      "key": "DOCKER_IMAGE",
-      "value": "ghcr.io/pterodactyl/yolks:java_17"
-    }
-  ]
+  "env": {
+    "PTERODACTYL_DOMAIN": "https://sanzy.webserverku.biz.id",
+    "PTERODACTYL_PLTA": "ptla_wSJufvKqSepXSGQzXrgsf2NWWmuDeBjNy7DdcDYaQDm",
+    "EGG_ID": "1",
+    "ALLOCATION_ID": "1",
+    "DOCKER_IMAGE": "ghcr.io/pterodactyl/yolks:java_17"
+  }
 }
