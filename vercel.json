@@ -2,23 +2,23 @@
   "env": [
     {
       "key": "PTERODACTYL_DOMAIN",
-      "value": "https://sanzy.webserverku.biz.id"  // ← GANTI dengan domain Pterodactyl Anda
+      "value": "https://sanzy.webserverku.biz.id"
     },
     {
       "key": "PTERODACTYL_PLTA",
-      "value": "ptla_wSJufvKqSepXSGQzXrgsf2NWWmuDeBjNy7DdcDYaQDm"  // ← GANTI dengan PLTA token Anda
+      "value": "ptla_wSJufvKqSepXSGQzXrgsf2NWWmuDeBjNy7DdcDYaQDm"
     },
     {
       "key": "EGG_ID",
-      "value": "1"  // ← GANTI dengan ID egg (cek di Pterodactyl Admin)
+      "value": "1"
     },
     {
       "key": "ALLOCATION_ID",
-      "value": "1"  // ← GANTI dengan allocation ID yang tersedia
+      "value": "1"
     },
     {
       "key": "DOCKER_IMAGE",
-      "value": "ghcr.io/pterodactyl/yolks:java_17"  // ← Opsional, sesuai kebutuhan
+      "value": "ghcr.io/pterodactyl/yolks:java_17"
     }
   ]
 }
